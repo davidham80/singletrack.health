@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Singletrack Health</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0f1117;
+      --surface:  #1a1d27;
+      --border:   #2a2d3a;
+      --green:    #22c55e;
+      --green-dim:#16a34a;
+      --text:     #e2e8f0;
+      --muted:    #94a3b8;
+      --radius:   12px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+    header span {
+      font-size: 0.82rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .hero p { color: var(--muted); font-size: 1rem; }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .contact-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+    .contact-card p  { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
+    .contact-card a {
+      display: inline-block;
+      background: var(--green);
+      color: #000;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .contact-card a:hover { background: var(--green-dim); color: #fff; }
+
+    /* ── FAQ ── */
+    h3.section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq { display: flex; flex-direction: column; gap: 2px; margin-bottom: 40px; }
+
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    details + details { border-top: none; border-radius: 0; }
+    details:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+    details:last-child  { border-radius: 0 0 var(--radius) var(--radius); }
+
+    summary {
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.95rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--green); font-size: 1.2rem; flex-shrink: 0; }
+    details[open] summary::after { content: "−"; }
+
+    .answer {
+      padding: 14px 20px 16px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+    .answer p + p { margin-top: 10px; }
+    .answer a { color: var(--green); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--muted); text-decoration: underline; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 480px) {
+      header { padding: 12px 20px; }
+      header img { height: 44px; }
+      .hero h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/logo.png" alt="Singletrack Health" />
+    <span>Support Center</span>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <h2>How can we help?</h2>
+      <p>Find answers below, or reach out directly — we typically respond within 24 hours.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Contact Support</h3>
+      <p>Can't find what you're looking for? Send us an email and we'll get back to you.</p>
+      <a href="mailto:support@singletrack.health">support@singletrack.health</a>
+    </div>
+
+    <h3 class="section-title">Frequently Asked Questions</h3>
+
+    <div class="faq">
+
+      <details>
+        <summary>How do I record a ride or workout?</summary>
+        <div class="answer">
+          <p>Open the app and tap the <strong>Go</strong> tab. Select your activity type (cycling, running, walking, etc.), then tap <strong>Start</strong>. The app records your route, distance, elevation, heart rate, and pace in real time.</p>
+          <p>When you're done, tap <strong>Finish</strong> and review your ride summary before saving.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does the app work with Apple Watch?</summary>
+        <div class="answer">
+          <p>Yes. Install the Singletrack Health Watch app from the Watch App Store. You can start and control workouts directly from your wrist. When your workout ends, the ride is automatically sent to your iPhone and saved to your activity history.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why isn't my Watch ride showing up on my iPhone?</summary>
+        <div class="answer">
+          <p>Watch rides sync over WatchConnectivity, which requires both devices to be nearby and the iPhone app to have recently been in the foreground. If a ride is missing:</p>
+          <p>1. Open the iPhone app — the sync happens in the background within a few seconds of the app launching.<br>
+          2. Make sure both devices are on the same Wi-Fi or within Bluetooth range.<br>
+          3. If it still doesn't appear, try opening the app on your Watch again to re-trigger the transfer.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>My routes and rides aren't syncing across my devices.</summary>
+        <div class="answer">
+          <p>Singletrack Health syncs your data through iCloud. Make sure you're signed in to the same Apple ID on all devices and that iCloud Drive is enabled in Settings → [Your Name] → iCloud.</p>
+          <p>Initial sync after a fresh install can take a few minutes depending on how much data you have.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I set a yearly fitness goal?</summary>
+        <div class="answer">
+          <p>Go to the <strong>Stats</strong> tab. Tap the goal card for the activity type you want to target, then enter your distance goal for the year. The app will track your progress and notify you at 80%, 90%, and 100% of your goal.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I follow other users and see the social feed?</summary>
+        <div class="answer">
+          <p>Tap the <strong>Feed</strong> tab. You can search for friends by username, or scan their QR code from the Profile tab. Once you follow someone, their public activities appear in your feed where you can give kudos or leave comments.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I delete my account and data?</summary>
+        <div class="answer">
+          <p>Go to the <strong>Profile</strong> tab → scroll to the bottom → tap <strong>Delete Account</strong>. This permanently deletes all your rides, goals, and profile data from iCloud and cannot be undone.</p>
+          <p>If you have trouble, email <a href="mailto:support@singletrack.health">support@singletrack.health</a> and we will manually remove your data within 30 days.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What data does Singletrack Health collect?</summary>
+        <div class="answer">
+          <p>We collect only what's needed to run the app: your workouts, routes, heart rate, and profile information you choose to provide. Your health data stays in your private iCloud account and is never sold or shared with advertisers.</p>
+          <p>See our full <a href="/privacy">Privacy Policy</a> for details.</p>
+        </div>
+      </details>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>
+      Singletrack Health &nbsp;·&nbsp;
+      <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="mailto:support@singletrack.health">support@singletrack.health</a>
+    </p>
+  </footer>
+
+</body>
+</html>

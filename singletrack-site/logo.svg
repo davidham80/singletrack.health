@@ -1,0 +1,26 @@
+<svg viewBox="0 0 620 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Singletrack Health">
+  <!-- Back mountain (lavender) -->
+  <polygon points="30,175 120,45 210,175" fill="#c4b0f4"/>
+  <!-- Front mountain (deep purple) -->
+  <polygon points="90,175 195,25 300,175" fill="#3b1a8f"/>
+  <!-- GPS dot: green (start) -->
+  <circle cx="335" cy="62" r="7" fill="#22c55e"/>
+  <!-- GPS dot: red (end) -->
+  <circle cx="335" cy="84" r="7" fill="#e53e3e"/>
+  <!-- SINGLETRACK -->
+  <text
+    x="355" y="97"
+    font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="800"
+    font-size="56"
+    fill="#3b1a8f"
+    letter-spacing="1">SINGLETRACK</text>
+  <!-- HEALTH -->
+  <text
+    x="358" y="148"
+    font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="300"
+    font-size="38"
+    fill="#3b1a8f"
+    letter-spacing="14">HEALTH</text>
+</svg>

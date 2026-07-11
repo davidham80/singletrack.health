@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Singletrack Health</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0f1117;
+      --surface: #1a1d27;
+      --border:  #2a2d3a;
+      --green:   #22c55e;
+      --text:    #e2e8f0;
+      --muted:   #94a3b8;
+      --radius:  12px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+    header span {
+      font-size: 0.82rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-title { margin-bottom: 8px; }
+    .page-title h2 { font-size: 1.9rem; font-weight: 700; }
+    .updated { color: var(--muted); font-size: 0.85rem; margin-bottom: 40px; }
+
+    section { margin-bottom: 36px; }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    p { color: var(--text); font-size: 0.95rem; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul { list-style: none; padding: 0; margin: 0 0 12px; }
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text);
+      padding: 6px 0 6px 18px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: "·";
+      color: var(--green);
+      position: absolute;
+      left: 4px;
+      font-weight: 700;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 40px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    a { color: var(--green); }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--muted); text-decoration: underline; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 480px) {
+      header { padding: 12px 20px; }
+      header img { height: 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/logo.png" alt="Singletrack Health" />
+    <span>Privacy Policy</span>
+  </header>
+
+  <main>
+
+    <div class="page-title">
+      <h2>Privacy Policy</h2>
+    </div>
+    <p class="updated">Last updated: June 2026</p>
+
+    <div class="highlight-box">
+      Your health and fitness data is private. We do not sell your data, share it with advertisers, or use it for purposes beyond operating the app.
+    </div>
+
+    <section>
+      <h3>1. Who We Are</h3>
+      <p>Singletrack Health is an iOS and Apple Watch app for tracking cycling, running, walking, and other fitness activities. The app is developed by David Ham. If you have questions about this policy, contact us at <a href="mailto:support@singletrack.health">support@singletrack.health</a>.</p>
+    </section>
+
+    <section>
+      <h3>2. Data We Collect</h3>
+      <p>We collect only the data needed to provide the app's features:</p>
+      <ul>
+        <li><strong>Account information</strong> — Your name and email address provided through Sign in with Apple. Apple may share a private relay email address rather than your real one at your discretion.</li>
+        <li><strong>Profile information</strong> — Username (handle), profile photo, height, weight, and date of birth that you optionally provide in the app.</li>
+        <li><strong>Location data</strong> — GPS coordinates recorded during active workouts to generate route maps and calculate distance. Location is only collected while a workout is in progress or while the app is in the foreground on the Activity screen.</li>
+        <li><strong>Health and fitness data</strong> — Workouts, distance, duration, elevation gain, heart rate, calories burned, and step count. This data is read from and written to Apple HealthKit with your permission.</li>
+        <li><strong>Social activity</strong> — Your public profile, activities you choose to share, followers, following relationships, kudos, and comments. This data is stored in Apple's CloudKit public database and is visible to other Singletrack Health users.</li>
+        <li><strong>Device information</strong> — Device token for push notifications (Apple Push Notification service). Used only to deliver notifications you have enabled.</li>
+        <li><strong>Crash and diagnostic data</strong> — If you have enabled crash reporting, anonymized crash reports including device model, iOS version, and stack traces may be sent to Firebase Crashlytics (Google). No health data is included in crash reports.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>3. How We Use Your Data</h3>
+      <ul>
+        <li>To record, display, and sync your workouts and fitness history across your devices.</li>
+        <li>To show your progress toward yearly fitness goals.</li>
+        <li>To power the social feed, including following, kudos, and comments.</li>
+        <li>To send push notifications you have opted in to (new followers, kudos, comments, goal milestones).</li>
+        <li>To diagnose and fix crashes and technical issues in the app.</li>
+      </ul>
+      <p>We do not use your data for advertising, profiling, or any purpose beyond operating the app.</p>
+    </section>
+
+    <section>
+      <h3>4. Data Storage and Sync</h3>
+      <p>Your private data — rides, goals, profile, and routes — is stored in your personal iCloud account via Apple's CloudKit private database. Only you can access this data. It syncs automatically across all your Apple devices signed in to the same Apple ID.</p>
+      <p>Social data you choose to make public (your handle, public activities, follow relationships) is stored in CloudKit's public database and is accessible to other users of the app.</p>
+      <p>Your health data in Apple HealthKit is governed by Apple's own privacy policies and remains on your device and iCloud account.</p>
+    </section>
+
+    <section>
+      <h3>5. Data Sharing</h3>
+      <p>We do not sell your data. We share data with the following parties only as necessary to operate the app:</p>
+      <ul>
+        <li><strong>Apple</strong> — CloudKit (data sync), HealthKit (health data), Sign in with Apple (authentication), and APNs (push notifications). Apple's privacy policy applies to data processed by these services.</li>
+        <li><strong>Google Firebase (Crashlytics)</strong> — Anonymized crash reports if crash reporting is enabled. No health or location data is included. Governed by Google's privacy policy.</li>
+      </ul>
+      <p>We do not share your data with any other third parties.</p>
+    </section>
+
+    <section>
+      <h3>6. HealthKit Data</h3>
+      <p>Singletrack Health requests access to Apple HealthKit to read and write workout data, heart rate, location routes, steps, and calories. This data is used exclusively within the app to display your fitness history and is never shared with third parties or used for advertising.</p>
+      <p>You can revoke HealthKit access at any time in <strong>Settings → Privacy & Security → Health → Singletrack Health</strong>.</p>
+    </section>
+
+    <section>
+      <h3>7. Location Data</h3>
+      <p>Location access is requested when you start a workout or open the Activity screen. We use precise location to record your route and calculate distance. Location is not collected in the background except during an active recording session, which is indicated by the blue location indicator in the iOS status bar.</p>
+      <p>You can manage location permissions at any time in <strong>Settings → Privacy & Security → Location Services → Singletrack Health</strong>.</p>
+    </section>
+
+    <section>
+      <h3>8. Your Rights and Data Deletion</h3>
+      <p>You can delete your account and all associated data at any time from within the app: <strong>Profile → Delete Account</strong>. This permanently removes your rides, goals, profile, and social data from CloudKit.</p>
+      <p>If you are unable to delete your data through the app, email <a href="mailto:support@singletrack.health">support@singletrack.health</a> and we will process your deletion request within 30 days.</p>
+    </section>
+
+    <section>
+      <h3>9. Children's Privacy</h3>
+      <p>Singletrack Health is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, contact us and we will delete it promptly.</p>
+    </section>
+
+    <section>
+      <h3>10. Changes to This Policy</h3>
+      <p>We may update this privacy policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h3>11. Contact</h3>
+      <p>Questions about this policy? Email us at <a href="mailto:support@singletrack.health">support@singletrack.health</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Singletrack Health &nbsp;·&nbsp;
+      <a href="/support">Support</a> &nbsp;·&nbsp;
+      <a href="mailto:support@singletrack.health">support@singletrack.health</a>
+    </p>
+  </footer>
+
+</body>
+</html>
