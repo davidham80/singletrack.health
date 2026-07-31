@@ -125,7 +125,7 @@
     <div class="page-title">
       <h2>Privacy Policy</h2>
     </div>
-    <p class="updated">Last updated: June 2026</p>
+    <p class="updated">Last updated: July 2026</p>
 
     <div class="highlight-box">
       Your health and fitness data is private. We do not sell your data, share it with advertisers, or use it for purposes beyond operating the app.
@@ -146,7 +146,9 @@
         <li><strong>Health and fitness data</strong> — Workouts, distance, duration, elevation gain, heart rate, calories burned, and step count. This data is read from and written to Apple HealthKit with your permission.</li>
         <li><strong>Social activity</strong> — Your public profile, activities you choose to share, followers, following relationships, kudos, and comments. This data is stored in Apple's CloudKit public database and is visible to other Singletrack Health users.</li>
         <li><strong>Device information</strong> — Device token for push notifications (Apple Push Notification service). Used only to deliver notifications you have enabled.</li>
-        <li><strong>Crash and diagnostic data</strong> — If you have enabled crash reporting, anonymized crash reports including device model, iOS version, and stack traces may be sent to Firebase Crashlytics (Google). No health data is included in crash reports.</li>
+        <li><strong>Contacts</strong> — If you use Find Friends, phone numbers and email addresses from your device address book are hashed on-device and compared against Singletrack Health users to surface people you know. Raw contact data is never stored or transmitted off your device.</li>
+        <li><strong>Weather data</strong> — The GPS coordinates and date of completed outdoor workouts are sent to Open-Meteo (open-meteo.com) to retrieve the ambient temperature at the time of your activity. Coordinates are rounded to approximately 11 meters of precision. Open-Meteo does not require account registration and does not receive any personally identifying information.</li>
+        <li><strong>Crash and diagnostic data</strong> — Anonymized crash reports including device model, iOS version, and stack traces are automatically sent to Firebase Crashlytics (Google) to help diagnose and fix bugs. No health or location data is included in crash reports.</li>
       </ul>
     </section>
 
@@ -157,6 +159,7 @@
         <li>To show your progress toward yearly fitness goals.</li>
         <li>To power the social feed, including following, kudos, and comments.</li>
         <li>To send push notifications you have opted in to (new followers, kudos, comments, goal milestones).</li>
+        <li>To display the ambient temperature for completed outdoor workouts using the Open-Meteo weather service.</li>
         <li>To diagnose and fix crashes and technical issues in the app.</li>
       </ul>
       <p>We do not use your data for advertising, profiling, or any purpose beyond operating the app.</p>
@@ -174,7 +177,8 @@
       <p>We do not sell your data. We share data with the following parties only as necessary to operate the app:</p>
       <ul>
         <li><strong>Apple</strong> — CloudKit (data sync), HealthKit (health data), Sign in with Apple (authentication), and APNs (push notifications). Apple's privacy policy applies to data processed by these services.</li>
-        <li><strong>Google Firebase (Crashlytics)</strong> — Anonymized crash reports if crash reporting is enabled. No health or location data is included. Governed by Google's privacy policy.</li>
+        <li><strong>Google Firebase (Crashlytics)</strong> — Anonymized crash reports to diagnose bugs. No health or location data is included. Governed by Google's privacy policy.</li>
+        <li><strong>Open-Meteo</strong> — Approximate GPS coordinates and workout date for temperature lookup after each outdoor activity. No personal information is transmitted. Governed by Open-Meteo's terms of service (open-meteo.com).</li>
       </ul>
       <p>We do not share your data with any other third parties.</p>
     </section>
