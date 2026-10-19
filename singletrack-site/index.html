@@ -1,1 +1,261 @@
-<html><body><p>Singletrack</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Singletrack Health</title>
+  <link rel="icon" type="image/png" href="/AppIcon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0f1117;
+      --surface:  #1a1d27;
+      --border:   #2a2d3a;
+      --green:    #22c55e;
+      --green-dim:#16a34a;
+      --text:     #e2e8f0;
+      --muted:    #94a3b8;
+      --radius:   12px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img.logo {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 64px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      margin: 0 auto 28px;
+      display: block;
+      box-shadow: 0 8px 32px rgba(34, 197, 94, 0.25);
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .hero h1 span { color: var(--green); }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .badge .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+    }
+
+    /* ── Features ── */
+    .features {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .feature-card .icon {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .feature-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── Private by design banner ── */
+    .private-banner {
+      max-width: 860px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+    }
+    .private-banner .inner {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .private-banner .inner strong { color: var(--text); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--muted); text-decoration: underline; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 480px) {
+      header { padding: 12px 20px; }
+      header img.logo { height: 44px; }
+      .hero { padding: 56px 24px 48px; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="/logo.png" alt="Singletrack Health" />
+  </header>
+
+  <section class="hero">
+    <img class="app-icon" src="/AppIcon.png" alt="Singletrack Health app icon" />
+    <h1>Your rides. Your runs.<br /><span>Your health.</span></h1>
+    <p>Singletrack Health is a fitness tracker for iPhone and Apple Watch built for cyclists, runners, hikers, and walkers who want a simple, private way to record activities and track progress over time.</p>
+    <div class="badge-row">
+      <span class="badge"><span class="dot"></span>Coming soon to the App Store</span>
+      <span class="badge"><span class="dot"></span>iPhone &amp; Apple Watch</span>
+    </div>
+  </section>
+
+  <div class="features">
+
+    <div class="feature-card">
+      <span class="icon">🗺️</span>
+      <h3>GPS activity tracking</h3>
+      <p>Record cycling, running, walking, hiking, and indoor runs with real-time GPS route maps, live pace, distance, elevation, and heart rate — right on your wrist or phone.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">⌚</span>
+      <h3>Apple Watch companion</h3>
+      <p>Start, pause, and finish workouts directly from your watch. Rides sync automatically to your iPhone the moment you open the app, with no manual transfers needed.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">📊</span>
+      <h3>Stats &amp; yearly goals</h3>
+      <p>Set distance goals for each activity type and track your progress throughout the year. Get notified at 80%, 90%, and 100% so you never lose sight of your target.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">🏆</span>
+      <h3>Personal records &amp; achievements</h3>
+      <p>Automatically surface your longest ride, fastest pace, most elevation, and more — per activity type. Unlock badges for milestones like century rides, marathons, and 30-day streaks.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">🔥</span>
+      <h3>Activity streaks</h3>
+      <p>Stay motivated with a running streak counter that tracks consecutive active days. See your current streak, all-time best, and personalized encouragement to keep it going.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">👥</span>
+      <h3>Social feed</h3>
+      <p>Follow friends, share activities, and give kudos. Find people you know via username search or QR code. Your social data stays in CloudKit — no third-party social networks.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">🌡️</span>
+      <h3>Ambient weather</h3>
+      <p>See the temperature at the time and place of each outdoor activity, automatically fetched after your ride using open weather data — no account required.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">📁</span>
+      <h3>GPX import &amp; export</h3>
+      <p>Import GPX files from other devices and export any activity to share routes or move data wherever you need it.</p>
+    </div>
+
+    <div class="feature-card">
+      <span class="icon">🔲</span>
+      <h3>Widgets &amp; complications</h3>
+      <p>Glance at today's miles, weekly totals, streak, and yearly goal progress from your Home Screen or watch face — no need to open the app.</p>
+    </div>
+
+  </div>
+
+  <div class="private-banner">
+    <div class="inner">
+      <strong>Private by design.</strong> Your workout data lives in your private iCloud account via Apple CloudKit and syncs across your devices automatically. Singletrack Health does not sell your data, share it with advertisers, or store it on third-party servers. Health data accessed through Apple HealthKit never leaves your device ecosystem.
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Singletrack Health &nbsp;·&nbsp;
+      <a href="/support">Support</a> &nbsp;·&nbsp;
+      <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="mailto:support@singletrack.health">support@singletrack.health</a>
+    </p>
+  </footer>
+
+</body>
+</html>

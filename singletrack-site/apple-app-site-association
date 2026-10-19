@@ -1,0 +1,8 @@
+{
+  "applinks": {
+    "details": [{
+      "appIDs": ["HAPWP39TPS.com.singletrack.app"],
+      "components": [{ "/": "/u/*" }]
+    }]
+  }
+}
